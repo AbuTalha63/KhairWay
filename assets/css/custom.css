@@ -10,37 +10,33 @@
    crops the edges. A cropped QR code may not scan. */
 
 .banner.style1 .qr-image {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 50%;
-	flex-shrink: 1;
-	min-width: 0;          /* flex items default to min-width:auto and
-	                          refuse to shrink below content size */
-	padding: 2rem;
-	box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    flex-shrink: 1;
+    min-width: 0;
+    padding: 2rem;
+    box-sizing: border-box;
 }
 
 .banner.style1 .qr-image img {
-	display: block;
-	max-width: 100%;       /* never wider than the container */
-	height: auto;          /* preserve aspect ratio */
-	border-radius: 4px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
 
-/* Portrait: banner.style1 flips to column-reverse, so the QR
-   panel goes full width. Cap the height so the text above it
-   isn't pushed off screen on short viewports. */
 @media screen and (orientation: portrait) {
 
-	.banner.style1 .qr-image {
-		width: 100%;
-		padding: 2rem 1.5rem;
-	}
+    .banner.style1 .qr-image {
+        width: 100%;
+        padding: 2rem 1.5rem;
+    }
 
-	.banner.style1 .qr-image img {
-		max-height: 55vh;
-		width: auto;
-	}
+    .banner.style1 .qr-image img {
+        max-height: 55vh;
+        width: auto;
+    }
 
 }
