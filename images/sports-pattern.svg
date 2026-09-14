@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" fill="none" preserveAspectRatio="xMidYMid slice">
+  <!-- Intentionally very faint line-art so the Khairway mark stays dominant. -->
+  <g stroke="#d8bd83" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.10">
+    <!-- basketball: upper left -->
+    <g transform="translate(82 82)">
+      <circle cx="76" cy="76" r="62"/>
+      <path d="M76 14c-17 36-17 88 0 124M76 14c17 36 17 88 0 124M20 48c36 11 75 44 112 84M20 104c39-17 78-18 112-10"/>
+    </g>
+
+    <!-- soccer ball: upper right -->
+    <g transform="translate(954 76)">
+      <circle cx="74" cy="74" r="61"/>
+      <path d="M74 44l24 17-9 29H59l-9-29 24-17zM74 44V14M98 61l29-10M89 90l18 25M59 90l-18 25M50 61L21 51M31 112l10 3M117 112l-10 3"/>
+    </g>
+
+    <!-- volleyball + net: upper middle -->
+    <g transform="translate(420 52)">
+      <path d="M8 112h326M18 112v132M324 112v132M18 132h306v84H18z"/>
+      <path d="M69 132v84M120 132v84M171 132v84M222 132v84M273 132v84M18 160h306M18 188h306" opacity="0.72"/>
+      <circle cx="248" cy="64" r="36"/>
+      <path d="M220 45c26 4 46 21 61 46M238 29c8 25 24 42 48 51M219 73c27-6 49-1 67 12"/>
+    </g>
+
+    <!-- football: lower left -->
+    <g transform="translate(98 472) rotate(-10 115 62)">
+      <path d="M18 62C59 0 171 0 212 62c-41 62-153 62-194 0z"/>
+      <path d="M54 30c31 23 91 23 122 0M54 94c31-23 91-23 122 0M86 62h58M100 52v20M115 49v26M130 52v20"/>
+    </g>
+
+    <!-- paintball mask: lower right -->
+    <g transform="translate(886 430)">
+      <path d="M25 54c12-27 42-42 82-42s70 15 82 42l-11 94c-2 22-20 38-42 38H78c-22 0-40-16-42-38L25 54z"/>
+      <path d="M38 63h138l-16 54H54L38 63zM72 137h70M84 154h46M25 84L6 96M189 84l19 12"/>
+      <path d="M59 82h39M116 82h39"/>
+    </g>
+
+    <!-- subtle secondary sports accents to carry the motif across the whole panel -->
+    <g opacity="0.66">
+      <!-- small soccer ball -->
+      <g transform="translate(352 442) scale(.62)">
+        <circle cx="74" cy="74" r="61"/>
+        <path d="M74 44l24 17-9 29H59l-9-29 24-17zM74 44V14M98 61l29-10M89 90l18 25M59 90l-18 25M50 61L21 51"/>
+      </g>
+      <!-- small basketball -->
+      <g transform="translate(690 470) scale(.58)">
+        <circle cx="76" cy="76" r="62"/>
+        <path d="M76 14c-17 36-17 88 0 124M20 48c36 11 75 44 112 84M20 104c39-17 78-18 112-10"/>
+      </g>
+    </g>
+  </g>
+</svg>
