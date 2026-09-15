@@ -213,7 +213,7 @@ html { scroll-padding-top: 104px; }
 .nav-wrap { min-height: 86px; }
 .brand-header { gap: 12px; }
 .brand-logo { width: 78px; height: 58px; }
-.hero-art { min-height: 430px; padding: 34px; background-image: url("images/sports-pattern.svg"), radial-gradient(ellipse at 50% 45%, #34372d, #1b1e19 70%); background-size: cover, auto; background-position: center, center; background-repeat: no-repeat; }
+.hero-art { min-height: 430px; padding: 34px; background-image: url("/images/sports-pattern.svg"), radial-gradient(ellipse at 50% 45%, #34372d, #1b1e19 70%); background-size: cover, auto; background-position: center, center; background-repeat: no-repeat; }
 .hero-art::before, .hero-art::after { display: none; }
 .hero-logo { width: min(94%, 470px); }
 .hero-art-caption { z-index: 2; }
@@ -273,7 +273,7 @@ html { scroll-padding-top: 104px; }
 /* Keep the sports motif clean and extremely faint while making the Khairway mark the focal point. */
 .hero-art {
   isolation: isolate;
-  background-image: url("images/sports-pattern.svg"), radial-gradient(ellipse at 50% 46%, #35382f 0%, #242820 48%, #1b1e19 78%);
+  background-image: url("/images/sports-pattern.svg"), radial-gradient(ellipse at 50% 46%, #35382f 0%, #242820 48%, #1b1e19 78%);
   background-size: 100% 100%, auto;
   background-position: center, center;
   background-repeat: no-repeat;
