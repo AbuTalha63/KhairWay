@@ -16,7 +16,7 @@
     width: 50%;
     flex-shrink: 1;
     min-width: 0;
-    padding: 2rem;
+    /* padding: 2rem;     -   removed to allow qr code image to fill the screen more */
     box-sizing: border-box;
 }
 
