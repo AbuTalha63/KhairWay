@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Wallpapers | Khair Way</title>
+  <meta name="description" content="Free Islamic quote wallpapers for your phone. Tap one to preview it, then download.">
+  <link rel="stylesheet" href="/wallpapers/wallpapers.css">
+</head>
+<body>
+
+  <header class="page-header">
+    <a class="back" href="/">&larr; Khair Way</a>
+    <h1>Wallpapers</h1>
+    <p class="sub">Free Islamic wallpapers for your phone. Tap one to preview it, then download.</p>
+  </header>
+
+  <main>
+    <!-- Filled in by app.js from wallpapers.json -->
+    <ul id="grid" class="grid"></ul>
+    <p id="status" class="status" role="status">Loading wallpapers&hellip;</p>
+  </main>
+
+  <!-- Native <dialog>: gives us the dark backdrop, Esc-to-close and focus handling for free -->
+  <dialog id="viewer" class="viewer" aria-labelledby="viewer-title">
+    <button type="button" id="close" class="close" aria-label="Close preview">&times;</button>
+
+    <div class="phone">
+      <img id="viewer-img" alt="">
+      <div class="lock" aria-hidden="true">
+        <span class="lock-date" id="lock-date"></span>
+        <span class="lock-time">9:41</span>
+      </div>
+    </div>
+
+    <h2 id="viewer-title" class="viewer-title"></h2>
+    <a id="download" class="download" href="#" download>&darr; Download</a>
+  </dialog>
+
+  <script src="/wallpapers/app.js" defer></script>
+</body>
+</html>
