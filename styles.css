@@ -65,26 +65,13 @@ p { color: var(--muted); margin: 18px 0; }
 .split-layout { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 45px; }
 .section-copy h2 { margin: 0 0 20px; }
 .section-copy > p:not(.eyebrow) { max-width: 590px; }
-.facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 28px 0; }
-.fact { border-top: 1px solid #776343; padding-top: 12px; }
-.fact strong { display: block; color: var(--gold); font: 24px var(--serif); }
-.fact span { color: var(--muted); font-size: 11px; }
-.hadith { margin: 28px 0; padding: 4px 0 4px 22px; border-left: 2px solid var(--gold); }
-.hadith blockquote { margin: 0; color: #e1d5b8; font: italic 23px/1.5 var(--serif); }
-.hadith figcaption { margin-top: 11px; color: #c7c3b7; font-size: 11px; }
-.hadith figcaption span { display: block; color: #96958a; margin-top: 3px; }
+
 .long-card { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-top: 25px; padding: 20px; border: 1px solid #5a503c; background: #20231d; }
 .long-card .eyebrow { margin-bottom: 8px; }
 .long-card h3 { font-size: 23px; }
 .long-card p { margin: 7px 0 0; font-size: 13px; }
 .media-column { min-width: 0; }
-.photo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-.photo-slot { position: relative; display: grid; place-items: center; min-height: 175px; overflow: hidden; border: 1px solid #4c4b3c; background: #292c25; padding: 14px; text-align: center; color: #c0b18c; font-size: 11px; letter-spacing: 1px; }
-.photo-slot.photo-tall { grid-row: span 2; min-height: 360px; }
-.photo-slot img, .photo-slot video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.photo-slot span { position: relative; z-index: 1; padding: 7px 10px; background: #171a17c9; }
-.photo-slot span small { color: #aaa99f; font-size: 10px; }
-.photo-slot.has-media span { display: none; }
+
 .upload-control { display: inline-block; margin-top: 12px; color: var(--gold); font-size: 12px; text-decoration: underline; cursor: pointer; }
 .upload-control input { display: block; width: 100%; max-width: 100%; margin-top: 8px; color: var(--muted); font-size: 12px; }
 .small-note { color: #8e8e82; font-size: 11px; }
@@ -115,9 +102,7 @@ code { color: #e0d2ae; }
 .text-link { display: inline-block; margin-top: 15px; color: #5b4a2d; font-size: 12px; text-decoration: underline; }
 .long-section { background: linear-gradient(120deg, #20231e, #171a17); }
 .long-preview { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-.hadith-large { margin: 0; }
-.hadith-large blockquote { font-size: 22px; }
-.hadith-large hr { border: 0; border-top: 1px solid #49483c; margin: 25px 0; }
+
 .site-footer { border-top: 1px solid #414238; padding: 30px 0 18px; }
 .footer-top { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
 .footer-nav { display: flex; flex-wrap: wrap; gap: 15px; color: #c1bfb3; font-size: 12px; }
@@ -127,9 +112,7 @@ code { color: #e0d2ae; }
 .long-hero-copy > p:not(.eyebrow):not(.tagline) { max-width: 550px; }
 .long-hero-art { min-height: 340px; }
 .section-heading { max-width: 650px; margin-bottom: 35px; }
-.hadith-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.hadith-list .hadith { margin: 0; }
-.hadith-list blockquote { font-size: 20px; }
+
 .long-photo-placeholder { display: grid; place-items: center; min-height: 330px; padding: 20px; border: 1px solid #4c4b3c; background: #292c25; color: #c0b18c; text-align: center; font-size: 12px; letter-spacing: 1px; }
 .long-photo-placeholder small { color: #aaa99f; font-size: 10px; }
 .long-note { padding: 25px; border: 1px solid #4b4b3c; }
@@ -154,20 +137,20 @@ code { color: #e0d2ae; }
   .hero-art { min-height: 260px; }
   .section { padding-block: 65px; }
   .split-layout, .join-layout, .long-preview { grid-template-columns: 1fr; gap: 28px; }
-  .photo-slot.photo-tall { min-height: 260px; }
+  
   .event-grid { grid-template-columns: 1fr 1fr; }
   .long-card { align-items: flex-start; flex-direction: column; }
-  .hadith-list { grid-template-columns: 1fr; gap: 20px; }
+  
   .community-section { padding-block: 60px; }
   .footer-bottom { flex-direction: column; }
 }
 @media (max-width: 430px) {
   .event-grid { grid-template-columns: 1fr; }
-  .photo-grid { gap: 7px; }
-  .photo-slot { min-height: 145px; padding: 8px; font-size: 10px; }
-  .photo-slot.photo-tall { min-height: 230px; }
-  .facts { grid-template-columns: 1fr 1fr; }
-  .hadith blockquote { font-size: 20px; }
+  
+  
+  
+  
+  
   .footer-nav { gap: 10px 14px; }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -184,7 +167,7 @@ code { color: #e0d2ae; }
 .hero-art { padding: 45px; }
 .hero-logo { position: relative; z-index: 1; width: min(86%, 380px); height: auto; object-fit: contain; }
 .hero-art::before, .hero-art::after { opacity: .23; }
-.medina-gallery .photo-wide { grid-column: 1 / -1; min-height: 190px; }
+
 .brand-footer { min-width: 170px; }
 .footer-logo { display: block; width: 180px; height: 86px; object-fit: contain; object-position: left center; }
 
@@ -199,7 +182,7 @@ code { color: #e0d2ae; }
 @media (max-width: 430px) {
   .brand-logo { width: 44px; height: 38px; }
   .brand-copy strong { font-size: 19px; }
-  .medina-gallery .photo-wide { min-height: 160px; }
+  
 }
 .brand .brand-copy { margin: 0; color: inherit; font: inherit; letter-spacing: normal; }
 .community-logo { display: block; width: 170px; height: auto; margin: 0 0 18px; }
@@ -219,14 +202,6 @@ html { scroll-padding-top: 104px; }
 .hero-art-caption { z-index: 2; }
 .community-logo { width: 225px; margin-bottom: 20px; }
 
-/* Let the Madinah imagery feel fuller while keeping copy on the left. */
-#medina .split-layout { grid-template-columns: minmax(0, .86fr) minmax(0, 1.14fr); gap: 30px; }
-.medina-gallery { grid-template-columns: 1.12fr .88fr; gap: 7px; }
-.medina-gallery .photo-slot { min-height: 245px; padding: 0; }
-.medina-gallery .photo-tall { min-height: 500px; }
-.medina-gallery .photo-wide { min-height: 255px; }
-.medina-gallery img { object-position: center; }
-
 /* Single-video NYC carousel. */
 .video-carousel { position: relative; width: min(100%, 560px); margin-inline: auto; }
 .video-viewport { overflow: hidden; border: 1px solid #555446; background: #111; box-shadow: 0 18px 42px #0004; }
@@ -241,10 +216,10 @@ html { scroll-padding-top: 104px; }
 
 @media (max-width: 900px) {
   .brand-logo { width: 68px; height: 52px; }
-  #medina .split-layout { grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 24px; }
-  .medina-gallery .photo-slot { min-height: 210px; }
-  .medina-gallery .photo-tall { min-height: 427px; }
-  .medina-gallery .photo-wide { min-height: 220px; }
+  
+  
+  
+  
 }
 @media (max-width: 760px) {
   html { scroll-padding-top: 80px; }
@@ -252,20 +227,20 @@ html { scroll-padding-top: 104px; }
   .brand-logo { width: 60px; height: 46px; }
   .hero-art { min-height: 320px; padding: 24px; }
   .hero-logo { width: min(92%, 410px); }
-  #medina .split-layout { grid-template-columns: 1fr; }
-  .medina-gallery .photo-slot { min-height: 190px; }
-  .medina-gallery .photo-tall { min-height: 387px; }
-  .medina-gallery .photo-wide { min-height: 215px; }
+  
+  
+  
+  
   .community-logo { width: 205px; }
   #join-qr { scroll-margin-top: 88px; }
 }
 @media (max-width: 430px) {
   .brand-logo { width: 52px; height: 42px; }
   .hero-art { min-height: 285px; }
-  .medina-gallery { gap: 5px; }
-  .medina-gallery .photo-slot { min-height: 150px; }
-  .medina-gallery .photo-tall { min-height: 305px; }
-  .medina-gallery .photo-wide { min-height: 175px; }
+  
+  
+  
+  
   .carousel-button { width: 38px; height: 38px; }
 }
 
@@ -300,70 +275,7 @@ html { scroll-padding-top: 104px; }
 }
 .hero-art-caption { z-index: 3; }
 
-/* Give the Madinah media substantially more horizontal room and remove dead space. */
-#medina.container { width: min(1380px, calc(100% - 40px)); }
-#medina .split-layout {
-  grid-template-columns: minmax(360px, .68fr) minmax(0, 1.32fr);
-  gap: 20px;
-  align-items: stretch;
-}
-#medina .media-column { min-width: 0; align-self: stretch; display: flex; }
-.medina-gallery {
-  width: 100%;
-  flex: 1 1 auto;
-  grid-template-columns: 1.12fr .88fr;
-  grid-template-rows: minmax(250px, 1fr) minmax(250px, 1fr) minmax(255px, .95fr);
-  gap: 3px;
-}
-.medina-gallery .photo-slot,
-.medina-gallery .photo-tall,
-.medina-gallery .photo-wide {
-  min-height: 0;
-}
-.medina-gallery .photo-tall { grid-row: 1 / span 2; }
-.medina-gallery .photo-wide { grid-column: 1 / -1; grid-row: 3; }
-.medina-gallery img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
-
-@media (max-width: 1100px) {
-  #medina.container { width: min(1180px, calc(100% - 36px)); }
-  #medina .split-layout { grid-template-columns: minmax(330px, .8fr) minmax(0, 1.2fr); gap: 16px; }
-  .medina-gallery { grid-template-rows: minmax(215px, 1fr) minmax(215px, 1fr) minmax(220px, .92fr); }
-}
-
-@media (max-width: 760px) {
-  #medina.container { width: calc(100% - 30px); }
-  #medina .split-layout { grid-template-columns: 1fr; gap: 28px; }
-  #medina .media-column { display: block; }
-  .medina-gallery {
-    grid-template-columns: 1.12fr .88fr;
-    grid-template-rows: 190px 190px 215px;
-    gap: 3px;
-  }
-}
-
-@media (max-width: 430px) {
-  .medina-gallery { grid-template-rows: 150px 150px 175px; gap: 2px; }
-}
-
 /* 2026-09-18 desktop + mobile presentation pass */
-/* Keep the Madinah imagery tightly grouped and give the media more visual weight on desktop. */
-#medina .split-layout {
-  grid-template-columns: minmax(350px, .62fr) minmax(0, 1.38fr);
-  gap: 14px;
-}
-#medina .media-column { align-items: stretch; }
-.medina-carousel { position: relative; width: 100%; flex: 1 1 auto; min-width: 0; }
-.medina-gallery { gap: 2px; }
-.medina-gallery .photo-slot { margin: 0; }
-.medina-carousel-button,
-.medina-carousel-status { display: none; }
-
-@media (max-width: 1100px) and (min-width: 761px) {
-  #medina .split-layout {
-    grid-template-columns: minmax(325px, .76fr) minmax(0, 1.24fr);
-    gap: 12px;
-  }
-}
 
 @media (max-width: 760px) {
   /* Header: logo left, KHAIRWAY wordmark truly centered, menu right. */
@@ -418,249 +330,29 @@ html { scroll-padding-top: 104px; }
     letter-spacing: .65px;
   }
 
-  /* Madinah facts form a clean funnel: two above, One Purpose centered below. */
-  .facts {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px 10px;
-  }
-  .facts .fact { text-align: center; }
-  .facts .fact:last-child {
-    grid-column: 1 / -1;
-    width: 50%;
-    justify-self: center;
-  }
+  
+  
+  
+  
 
-  /* Mobile-only Madinah image carousel: full-width, swipeable, and auto-rotating via JS. */
-  #medina .split-layout { gap: 28px; }
-  #medina .media-column { display: block; }
-  .medina-carousel {
-    overflow: hidden;
-    border: 1px solid #4c4b3c;
-    background: #20231f;
-  }
-  .medina-gallery {
-    display: flex;
-    width: 100%;
-    grid-template-columns: none;
-    grid-template-rows: none;
-    gap: 0;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    overscroll-behavior-x: contain;
-    touch-action: pan-x pan-y;
-  }
-  .medina-gallery::-webkit-scrollbar { display: none; }
-  .medina-gallery .medina-slide,
-  .medina-gallery .photo-slot,
-  .medina-gallery .photo-tall,
-  .medina-gallery .photo-wide {
-    position: relative;
-    flex: 0 0 100%;
-    width: 100%;
-    min-width: 100%;
-    min-height: 0;
-    height: auto;
-    aspect-ratio: 4 / 3;
-    grid-row: auto;
-    grid-column: auto;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-    border: 0;
-  }
-  .medina-gallery img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  .medina-carousel-button {
-    position: absolute;
-    top: 50%;
-    z-index: 5;
-    display: grid;
-    width: 38px;
-    height: 38px;
-    place-items: center;
-    transform: translateY(-50%);
-    border: 1px solid rgba(225,199,143,.85);
-    border-radius: 50%;
-    background: rgba(23,26,23,.78);
-    color: var(--cream);
-    cursor: pointer;
-    backdrop-filter: blur(5px);
-  }
-  .medina-carousel-prev { left: 10px; }
-  .medina-carousel-next { right: 10px; }
-  .medina-carousel-status {
-    position: absolute;
-    right: 11px;
-    bottom: 11px;
-    z-index: 5;
-    display: block;
-    padding: 4px 8px;
-    border: 1px solid rgba(225,199,143,.72);
-    background: rgba(23,26,23,.76);
-    color: #efe4ca;
-    font-size: 10px;
-    letter-spacing: 1.2px;
-    backdrop-filter: blur(5px);
-  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }
 
 @media (max-width: 430px) {
   .brand-header { padding-right: 68px; }
   .brand-header .brand-copy strong { font-size: 18px; letter-spacing: 1.6px; }
   .hero-copy .button-row .button { min-height: 60px; font-size: 9.5px; }
-  .medina-gallery .medina-slide,
-  .medina-gallery .photo-slot,
-  .medina-gallery .photo-tall,
-  .medina-gallery .photo-wide { aspect-ratio: 1 / 1; }
+  
 }
 
-
-/* Preserve the original desktop paragraph measure after grouping the Madinah copy for mobile. */
-#medina .medina-main-copy > p:not(.eyebrow) { max-width: 590px; }
-
-/* 2026-09-18 Madinah mobile breakpoint restructure */
-@media (max-width: 760px) {
-  #medina {
-    padding-block: 54px;
-  }
-
-  #medina .split-layout {
-    display: block;
-  }
-
-  /* Top half: narrative left, program facts + hadith right. */
-  #medina .medina-copy {
-    display: grid;
-    grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);
-    gap: 0;
-    align-items: start;
-    margin-bottom: 24px;
-  }
-
-  #medina .medina-main-copy {
-    min-width: 0;
-    padding-right: 16px;
-  }
-
-  #medina .medina-details {
-    min-width: 0;
-    padding-left: 16px;
-    border-left: 1px solid rgba(197, 166, 107, .52);
-  }
-
-  #medina .medina-main-copy .eyebrow {
-    margin-bottom: 10px;
-    font-size: 8px;
-    letter-spacing: 1.55px;
-  }
-
-  #medina .medina-main-copy h2 {
-    margin-bottom: 12px;
-    font-size: clamp(25px, 7.2vw, 34px);
-    line-height: 1.08;
-    letter-spacing: -.6px;
-  }
-
-  #medina .medina-main-copy > p:not(.eyebrow) {
-    max-width: none;
-    margin: 9px 0;
-    font-size: clamp(10.5px, 2.85vw, 12.5px);
-    line-height: 1.55;
-  }
-
-  #medina .medina-details .facts {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 9px;
-    margin: 0 0 16px;
-  }
-
-  #medina .medina-details .fact,
-  #medina .medina-details .facts .fact:last-child {
-    width: 100%;
-    grid-column: auto;
-    justify-self: stretch;
-    padding-top: 7px;
-    text-align: left;
-  }
-
-  #medina .medina-details .fact strong {
-    font-size: clamp(18px, 5vw, 23px);
-    line-height: 1.08;
-  }
-
-  #medina .medina-details .fact span {
-    display: block;
-    margin-top: 2px;
-    font-size: clamp(8px, 2.2vw, 10px);
-    line-height: 1.35;
-  }
-
-  #medina .medina-details .hadith {
-    margin: 0;
-    padding: 1px 0 1px 10px;
-    border-left-width: 1px;
-  }
-
-  #medina .medina-details .hadith blockquote {
-    font-size: clamp(13px, 3.5vw, 17px);
-    line-height: 1.4;
-  }
-
-  #medina .medina-details .hadith figcaption {
-    margin-top: 7px;
-    font-size: clamp(7.5px, 2vw, 9px);
-    line-height: 1.35;
-  }
-
-  /* Bottom half: one large carousel spanning the full Madinah content width. */
-  #medina .media-column {
-    width: 100%;
-    margin: 0;
-  }
-
-  #medina .medina-carousel {
-    width: 100%;
-    height: clamp(250px, 67vw, 360px);
-    overflow: hidden;
-  }
-
-  #medina .medina-gallery {
-    height: 100%;
-  }
-
-  #medina .medina-gallery .medina-slide,
-  #medina .medina-gallery .photo-slot,
-  #medina .medina-gallery .photo-tall,
-  #medina .medina-gallery .photo-wide {
-    height: 100%;
-    min-height: 100%;
-    aspect-ratio: auto;
-  }
-}
-
-@media (max-width: 430px) {
-  #medina.container {
-    width: calc(100% - 22px);
-  }
-
-  #medina .medina-copy {
-    grid-template-columns: minmax(0, 1.04fr) minmax(0, .96fr);
-    margin-bottom: 18px;
-  }
-
-  #medina .medina-main-copy { padding-right: 11px; }
-  #medina .medina-details { padding-left: 11px; }
-  #medina .medina-main-copy h2 { font-size: clamp(22px, 7vw, 29px); }
-  #medina .medina-main-copy > p:not(.eyebrow) { font-size: 10px; line-height: 1.48; }
-  #medina .medina-details .fact strong { font-size: 18px; }
-  #medina .medina-details .hadith blockquote { font-size: 13px; }
-  #medina .medina-carousel { height: clamp(240px, 70vw, 305px); }
-}
