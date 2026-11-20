@@ -171,6 +171,12 @@ code { color: #e0d2ae; }
 .brand-footer { min-width: 170px; }
 .footer-logo { display: block; width: 180px; height: 86px; object-fit: contain; object-position: left center; }
 
+/* 2026-15 Khairway content refresh (by RZI3D) */
+.khairway-light      { color: #FFFFFF; background-color: transparent; }
+.khairway-light-gold { color: #EDDFC1; background-color: transparent; }
+.khairway-dark       { color: #000000; background-color: transparent; }
+.khairway-dark-gold  { color: #3B2E1A; background-color: transparent; }
+
 @media (max-width: 900px) {
   .brand-copy small { display: none; }
   .brand-logo { width: 52px; }
